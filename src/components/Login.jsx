@@ -11,6 +11,7 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
 const dispatch=useDispatch();
 const navigate=useNavigate();
+const [error,setError]=useState("");
   const handleLogin = async () => {
     
 
@@ -27,7 +28,8 @@ const navigate=useNavigate();
       dispatch(addUser(res.data));
      return navigate("/");
     } catch (err) {
-      console.log(err);
+      setError(err?.response?.data || "Something went wrong!");
+     
     } finally {
       setLoading(false);
     }
@@ -65,6 +67,8 @@ const navigate=useNavigate();
               <div className="label"></div>
             </label>
           </div>
+
+          <p className="text-red-500">{error}</p>
 
           <div className="card-actions justify-center m-2">
             <button
