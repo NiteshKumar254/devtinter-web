@@ -9,6 +9,12 @@
 -Create BrowserRouter >Routes>Route=/BoDY>RouteChildreN
 -CREATE AN outlet In ur Body Component
 -Create  a footer 
+-Create a Login Page 
+-Install axios 
+-CORS -install cors in backend => add middleware to with configuration : origin,credentials :true
+-whatever u r making API call so pass axios =>{withCredentials: true}
+-install react-redux + @reduxjs/toolkit - https://redux-toolkit------/quick-start
+-configureStore => Provider =>createSlice => add reducer to store
 
 Body 
    NavBar
