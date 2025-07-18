@@ -21,7 +21,12 @@ NavBar should update as soon as user logs in
 Refactor our code to add constants file + create a components folder You You should not be access other rovtes without login.
 If token is not present , redirect user to login page
 -Logout 
+Get the feed and add the feed in the store
+build the user card on feed
 - Profile page
+-edit profile feature 
+-show toast messge on save of profile 
+-see all my connections
 
 
 
